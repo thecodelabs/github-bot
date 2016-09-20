@@ -13,9 +13,9 @@ username = driver.find_element_by_id("login_field")
 password = driver.find_element_by_id("password")
 
 # password and username need to go into these values
-username.send_keys("roshnikaran")
+username.send_keys("github_username_goes_here")
 time.sleep(1)
-password.send_keys("christian101")
+password.send_keys("github_password_goes_here")
 time.sleep(1)
 
 
