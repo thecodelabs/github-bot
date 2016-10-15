@@ -9,8 +9,8 @@ clone this repository
 
 create a python 2.7 environment
 
-	$ virtualenv <replace_with_your_preffered_env_name>
-	$ source <replace_with_your_preffered_env_name>/bin/activate
+	$ virtualenv <your_preffered_env_name>
+	$ source <your_preffered_env_name>/bin/activate
 
 Install dependancies
 
