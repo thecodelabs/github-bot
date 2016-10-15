@@ -1,6 +1,11 @@
-### github follow bot
+## Github follow bot
 
-#### Setup
+### Disclaimer
+
+	* Depending on internet connection, script will run for morethan 36 hours.
+	* It is considered spammy so use at your own risk
+
+### Script setup
 
 clone this repository
 
@@ -16,7 +21,7 @@ Install dependancies
 
 	$ pip install -r requirements.txt
 
-Download and unpack/etract geckodriver
+Download and extract the latest geckodriver executable found [here](https://github.com/mozilla/geckodriver/releases)
 make it executable.
 move to /usr/bin
 
