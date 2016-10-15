@@ -1,11 +1,22 @@
-from selenium import webdriver
 import time
 import sys
+import os
+from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+# Tell the Python bindings to use Marionette.
+caps = DesiredCapabilities.FIREFOX
+caps["marionette"] = True
+
+
 #Firefox used
-driver = webdriver.Firefox()
+driver = webdriver.Firefox(capabilities=caps)
+
+
 # base url
 driver.get("http://github.com/login")
 
@@ -13,9 +24,9 @@ username = driver.find_element_by_id("login_field")
 password = driver.find_element_by_id("password")
 
 # password and username need to go into these values
-username.send_keys("github_username_goes_here")
+username.send_keys("your_user_name_goes_here")
 time.sleep(1)
-password.send_keys("github_password_goes_here")
+password.send_keys("your_password_goes_here")
 time.sleep(1)
 
 
@@ -52,7 +63,5 @@ for user in prepend:
         except:
             pass
         time.sleep(1)
-
-
 
 driver.close()
