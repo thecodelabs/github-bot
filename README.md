@@ -9,7 +9,7 @@
 
 clone this repository
 
-	$ git clone https://github.com/mussaimo/github-bot.git
+	$ git clone https://github.com/thecodelabs/github-bot.git
 	$ cd github-bot
 
 create a python 2.7 environment
@@ -25,23 +25,23 @@ Download and extract the latest geckodriver executable found [here](https://gith
 make it executable.
 move to /usr/bin
 
-	$ chmod a+x geckodriver
-	$ sudo mv geckodriver /usr/bin
-	$ export PATH=$PATH:/usr/bin/geckodriver
+```bash
+$ chmod a+x geckodriver
+$ sudo mv geckodriver /usr/bin
+$ export PATH=$PATH:/usr/bin/geckodriver
+```
 
+Replace all the required variables(check [follow-bot.py](https://github.com/the codelabs/github-bot/blob/master/follow_bot.py))
 
-Replace all the required variables(check [follow-bot.py](https://github.com/mussaimo/github-bot/blob/master/follow_bot.py))
-
-	username.send_keys("your_user_name_goes_here")
-	
-	password.send_keys("your_password_goes_here")
-	
+```js
+username.send_keys("your_user_name_goes_here")
+password.send_keys("your_password_goes_here")
+```
 
 Run file
-
-	$ python follow_bot.py
-
-
+```bash
+$ python follow_bot.py
+```
 
 ### License
 ---
