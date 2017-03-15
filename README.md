@@ -31,7 +31,7 @@ $ sudo mv geckodriver /usr/bin
 $ export PATH=$PATH:/usr/bin/geckodriver
 ```
 
-Replace all the required variables check [follow-bot.py](https://github.com/the codelabs/github-bot/blob/master/follow_bot.py)
+Replace all the required variables check [follow-bot.py](https://github.com/thecodelabs/github-bot/blob/master/follow_bot.py)
 
 ```js
 username.send_keys("your_user_name_goes_here")
